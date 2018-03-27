@@ -2,7 +2,7 @@
 lock "3.9.0"
 
 set :application, "nurax"
-set :repo_url, "git@github.com:curationexperts/nurax.git"
+set :repo_url, "https://github.com/" + ENV['PROJECT_OWNER'] + "/" + ENV['PROJECT_NAME']
 
 # Default branch is :master
 set :branch, ENV['REVISION'] || ENV['BRANCH'] || 'master'
