@@ -18,7 +18,7 @@ set :branch, ENV['REVISION'] || ENV['BRANCH'] || 'master'
 # set :format_options, command_output: true, log_file: "log/capistrano.log", color: :auto, truncate: :auto
 
 # Default value for :pty is false
-set :pty, true
+# set :pty, true
 
 # Default value for :linked_files is []
 append :linked_files, "config/analytics.yml", "config/blacklight.yml", "config/browse_everything_providers.yml", "config/database.yml", "config/fedora.yml", "config/secrets.yml", "config/solr.yml"
