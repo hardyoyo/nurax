@@ -24,7 +24,7 @@ set :branch, ENV['REVISION'] || ENV['BRANCH'] || 'master'
 append :linked_files, Dir.pwd + "/config/analytics.yml", Dir.pwd + "/config/blacklight.yml", Dir.pwd + "/config/browse_everything_providers.yml", Dir.pwd + "/config/database.yml", Dir.pwd + "/config/fedora.yml", Dir.pwd + "/config/secrets.yml", Dir.pwd + "/config/solr.yml"
 
 # Default value for linked_dirs is []
-append :linked_dirs, Dir.pwd + "/log", Dir.pwd + "/tmp/pids", Dir.pwd + "/tmp/cache", Dir.pwd + "/tmp/sockets", Dir.pwd + "/public/system"
+append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
